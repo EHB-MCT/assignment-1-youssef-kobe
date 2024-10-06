@@ -11,13 +11,19 @@ const HomePage = () => {
   // Using the custom useColor hook to manage selectedColor state
   const [selectedColor, setSelectedColor] = useColor();
 
+  const resetColor = () => {
+    setSelectedColor('white');
+  };
+
   return (
     <div className="app-container">
       <h1>Color Picker App</h1>
       <ColorPicker colors={colors} onColorSelect={setSelectedColor} />
       <ColorDisplay selectedColor={selectedColor} />
+      <button className="reset-button" onClick={resetColor}>Reset Color</button>
     </div>
   );
 };
 
-export default HomePage; 
+export default HomePage;
+
