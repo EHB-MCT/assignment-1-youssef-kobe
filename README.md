@@ -41,6 +41,15 @@ Click the Reset Color button to reset the selected color to white.
 - **styles/**: CSS files for styling the application.
 
 
+## Commit Guidelines
+
+This project follows a consistent commit message format to ensure clarity and maintainability:
+
+- chore: tasks such as dependency updates or changes to folders or project configuration that don’t add features or fix bugs. This is used for non-functional updates.
+- feat: Implementation of new features like the reset button.
+- docs: Documentation updates, including README improvements.
+
+
 ## Sources 
 
 - [handsonreact.com](https://handsonreact.com/docs/code-organization-conventions) 
